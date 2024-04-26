@@ -9,15 +9,10 @@ body {
 .page-title {
     font-family: 'VALORANT', sans-serif;
     color: rgb(221, 36, 76);
-    font-size: 50px;
 }
 
 .text-valorant {
     font-family: 'VALORANT', sans-serif;
-}
-
-.character-img {
-    height: 150px;
 }
 
 .character-title {

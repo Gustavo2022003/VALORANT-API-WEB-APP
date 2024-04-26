@@ -10,15 +10,15 @@
 </head>
 <body>
     <div class="lg:w-[1500px] lg:mx-auto">
-        <a href="/"><h1 class="page-title mt-[20px] mx-[50px]">VALORANT<span class="text-white">API</span></h1></a>
+        <a href="/"><h1 class="text-3xl text-center lg:text-left page-title my-[20px] lg:mx-[50px] lg:text-5xl">VALORANT<span class="text-white">API</span></h1></a>
 
-        <div class="navbar-custom lg:mx-10 lg:inline-block">
+        <div class="lg:mx-10 lg:inline-block flex justify-center">
             <form action="/searchCharacter/gekko" method="get">
                 <button class="mx-auto bg-[#191925] border-2 border-[#242434] hover:border-2 hover:border-[#FD4556] rounded-lg p-2" type="submit">Search Agent</button>
             </form>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 lg:mx-10 lg:gap-10 lg:my-5">
+        <div class="mx-auto grid grid-cols-1 lg:grid-cols-3 lg:mx-10 lg:gap-10 lg:my-5">
             <%- include("partials/character.ejs"); %>
         </div>
     </div>
