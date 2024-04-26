@@ -1,7 +1,7 @@
 <div>
 <img src="public/icons/valorant.ico"/>
 <h1>VALORANT API WEB APP</h1>
-A web app made with js, express, axios, ejs, html, css and jquery to consume and renderize informations from the game Valorant.
+A web app made with js, express, axios, ejs, css and jquery to consume and renderize informations from the game Valorant.
 <br>
 <br>
   
