@@ -2,6 +2,10 @@
 <img src="public/icons/valorant.ico"/>
 <h1>VALORANT API WEB APP</h1>
 A web app made with js, express, axios, ejs, html, css and jquery to consume and renderize informations from the game Valorant.
+<br>
+<br>
+  
+You can check out the API docs [here](https://dash.valorant-api.com/)
 </div>
 <br>
 
@@ -109,3 +113,5 @@ If the issue persists, feel free to [create an issue](https://github.com/Gustavo
 This README provides detailed instructions for setting up, running, and using the application, making it accessible even to those who may be new to technology. If you have any questions or need further clarification, don't hesitate to reach out!
 
 Author: https://github.com/Gustavo2022003
+
+Credits: https://valorant-api.com/
