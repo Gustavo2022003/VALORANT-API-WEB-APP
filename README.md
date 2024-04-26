@@ -7,7 +7,7 @@ A web app made with js, express, axios, ejs, html, css and jquery to consume and
 
 ![](public/imgs/Screenshot1.png)
 
-## Development Stack
+## Development Stack 📚
 
 ### Languages
 - JavaScript
@@ -26,7 +26,7 @@ A web app made with js, express, axios, ejs, html, css and jquery to consume and
 - jQuery
 - Tailwind
 
-# How to run
+# How to run ▶️
 
 Requirements
 To run this application, ensure you have the following installed:
@@ -49,7 +49,7 @@ npm i
 
 ⚠️*(To install the dependecies you will need to open the terminal in the same directory as the index.js or package.json)*
 
-# Set up environment variables:
+# Set up environment variables 📥
 
 Inside the root directory of this project there is a .env file.
 You can change the PORT by editing this variable:
@@ -58,7 +58,7 @@ PORT=<port_number>
 ```
 Replace <port_number> with the desired port number for the server.
 
-# Start the server
+# Start the server 🧮
 
 You can start your server by oppening a new terminal on the root directory of this project and typing:
 
@@ -72,7 +72,7 @@ or typing:
 npm start
 ```
 
-# Access the application
+# Access the application ❇️
 Open a web browser and navigate to http://localhost:<port_number> where <port_number> is the port specified in the .env file.
 
 *for example if you set PORT to 8000 in the `.env` file, then it would be http://localhost:8000/*
@@ -96,3 +96,16 @@ On the main page's root URL, you can view and explore a comprehensive list of al
 or simply by selecting the agent's name from the dropdown menu:
 
 ![](public/imgs/GIF1.gif)
+
+# Troubleshooting 🛟
+If you encounter any issues while setting up or running the application, please refer to the following steps:
+
+- ✅ Ensure Node.js is installed: Verify that Node.js is installed on your system and is accessible via the command line.
+- ✅ Check environment variables: Double-check the .env file for any typos or missing variables. Ensure the API URL is correct.
+- ✅ Dependencies: Make sure all dependencies are installed by running npm install in the project directory.
+
+If the issue persists, feel free to [create an issue](https://github.com/Gustavo2022003/VALORANT-API-WEB-APP/issues) on the project repository for further assistance.
+
+This README provides detailed instructions for setting up, running, and using the application, making it accessible even to those who may be new to technology. If you have any questions or need further clarification, don't hesitate to reach out!
+
+Author: https://github.com/Gustavo2022003
