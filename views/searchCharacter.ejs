@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/icons/valorant.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Search Agent</title>
+</head>
+<body>
+    <a href="/"><h1 class="page-title mt-[20px] mx-[63px]">VALORANT<span class="text-white">API</span></h1></a>
+    <div class="mx-auto w-6/12 flex flex-col items-center">
+        <p class="opacity-50">Search agent by name or select in the dropdown menu.</p>
+        <form action="/getCharacterByName" method="post">
+            <input placeholder="Agent name" autocomplete="off" class="my-5 border-[1px] border-[#4b4b5c] bg-[#242434] rounded-lg w-48 px-2 py-1 focus:border-[1px] focus:border-[#FD4556] focus:outline-none" type="text" name="characterName" id="characterName">
+            <select class="border-[1px] border-[#4b4b5c] bg-[#242434] rounded-lg px-2 py-1" name="characterNameCombo" id="characterNameCombo">
+                <option value="">Selecione o agente</option>
+                <option value="gekko">Gekko</option>
+                <option value="fade">Fade</option>
+                <option value="breach">Breach</option>
+                <option value="deadlock">Deadlock</option>
+                <option value="raze">Raze</option>
+                <option value="chamber">Chamber</option>
+                <option value="kayo">KAY/O</option>
+                <option value="skye">Skye</option>
+                <option value="cypher">Cypher</option>
+                <option value="sova">Sova</option>
+                <option value="killjoy">Killjoy</option>
+                <option value="harbor">Harbor</option>
+                <option value="viper">Viper</option>
+                <option value="phoenix">Phoenix</option>
+                <option value="astra">Astra</option>
+                <option value="brimstone">Brimstone</option>
+                <option value="iso">Iso</option>
+                <option value="clove">Clove</option>
+                <option value="neon">Neon</option>
+                <option value="yoru">yoru</option>
+                <option value="sage">Sage</option>
+                <option value="reyna">Reyna</option>
+                <option value="omen">Omen</option>
+                <option value="jett">Jett</option>
+            </select>
+            <br>
+            <div class="flex justify-center">
+                <button class=" bg-[#191925] border-2 border-[#242434] hover:border-2 hover:border-[#FD4556] rounded-lg p-2" type="submit">Search</button>
+            </div>
+        </form>
+
+        <% if (content === undefined) { %>
+            <p class="mt-5 text-[#FD4556]">404 - Agent not found.</p>
+        <% } %>
+
+        <% if (content) { %>
+            <p class="mt-10 text-5xl text-valorant" style="color: #<%= content.backgroundGradientColors[0]%>"><%= content.displayName %></p>
+            <p class="mb-10 opacity-50 text-2xl"><%= content.role.displayName %></p>
+            <div class="grid grid-cols-12 row-span-12 border-[1px] border-[#<%= content.backgroundGradientColors[0]%>] rounded-xl p-5">
+                <img class="col-span-6 row-span-12" src="<%= content.fullPortrait %>" alt="">
+                <div class="col-span-6 row-span-6">
+                    <p class="text font-medium text-xl text-[#FD4556]">Description</p>
+                    <p><%= content.description %></p>
+                </div>
+                <div class="col-span-6 row-span-6">
+                    <p class="text font-medium text-xl text-[#FD4556]">Abilities</p>
+                    <% for (ability of content.abilities) { %>
+                        <div class="abilityBlock ability-background inline-block px-2 py-2 my-1 text-[#<%= content.backgroundGradientColors[0]%>] hover:bg-[#0a0a0e] cursor-pointer">
+                            <img class="mx-auto w-12" src="<%= ability.displayIcon %>" alt="">
+                            <p class="ability"><%= ability.displayName %></p>
+                        </div>
+                    <% }; %>
+                </div>
+            </div>
+        <% } %>
+    </div>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
