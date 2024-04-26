@@ -47,7 +47,7 @@ Install dependencies:
 npm i
 ```
 
-⚠️*(To install the dependecies you will need to open the terminal in the same directory as the index.js or package.json)*
+⚠️ *(To install the dependecies you will need to open the terminal in the same directory as the index.js or package.json)*
 
 # Set up environment variables 📥
 
